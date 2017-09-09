@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         {
             Toast.makeText(this, "item 3 clicked", Toast.LENGTH_SHORT).show();
         }
+
         return super.onOptionsItemSelected(item);
     }
 }
