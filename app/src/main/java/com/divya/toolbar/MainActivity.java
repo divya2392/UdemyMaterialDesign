@@ -43,8 +43,15 @@ public class MainActivity extends AppCompatActivity {
         }else if(id== R.id.item3_id)
         {
             Toast.makeText(this, "item 3 clicked", Toast.LENGTH_SHORT).show();
-        }
 
+        }else if(id== R.id.search_id)
+        {
+            Toast.makeText(this, "search item clicked", Toast.LENGTH_SHORT).show();
+
+        }else if(id== R.id.shopping_cart_id)
+        {
+            Toast.makeText(this, "shopping cart item clicked", Toast.LENGTH_SHORT).show();
+        }
         return super.onOptionsItemSelected(item);
     }
 }
