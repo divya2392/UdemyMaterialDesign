@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     @Override
@@ -51,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
         }else if(id== R.id.shopping_cart_id)
         {
             Toast.makeText(this, "shopping cart item clicked", Toast.LENGTH_SHORT).show();
+
+        }else if(id== android.R.id.home)
+        {
+            finish();
         }
         return super.onOptionsItemSelected(item);
     }
